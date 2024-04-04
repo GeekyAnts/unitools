@@ -1,0 +1,8 @@
+{
+  "extends": "./expo.json",
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext"
+  }
+}
