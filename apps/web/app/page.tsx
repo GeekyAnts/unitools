@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "@gluestack-ui/universal-image";
+import Image from "@unitools/image";
 import styles from "./page.module.css";
 import { View, Text } from "react-native-web";
-import Link from "@gluestack-ui/universal-navigation";
+import Link from "@unitools/navigation";
 import React = require("react");
 
 function Gradient({

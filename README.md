@@ -18,7 +18,6 @@ This Turborepo includes the following packages/apps:
 
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
-- `@gluestack-ui/ui`: a stub React component library shared by both `web` and `docs` applications
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 

@@ -1,5 +1,5 @@
 {
-  "extends": "@gluestack-ui/typescript-config/react-library.json",
+  "extends": "./react-library.json",
   "compilerOptions": {
     "outDir": "dist"
   },

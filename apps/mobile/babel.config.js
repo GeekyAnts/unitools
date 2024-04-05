@@ -1,5 +1,5 @@
 const path = require("path");
-const myBabel = require("@gluestack-ui/babel-plugin-universal-image");
+const myBabel = require("@unitools/babel-plugin-universal-image");
 // path.resolve(__dirname, "../../packages/babel-plugin-universal-image/src")
 module.exports = function (api) {
   api.cache(true);

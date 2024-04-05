@@ -1,4 +1,4 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  transpilePackages: ["@gluestack-ui/ui"],
+  transpilePackages: ["@unitools/navigation", "@unitools/image"],
 };

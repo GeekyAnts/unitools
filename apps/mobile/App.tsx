@@ -6,8 +6,8 @@ import {
   usePathname,
   useRouter,
   useSearchParams,
-} from "@gluestack-ui/universal-navigation";
-import Image from "@gluestack-ui/universal-image";
+} from "@unitools/navigation";
+import Image from "@unitools/image";
 
 function HomeScreen() {
   return (
@@ -20,7 +20,7 @@ function HomeScreen() {
       }}
     >
       <Text>Home Screen</Text>
-      <Image src={"test.png"} width={50} height={50} alt="saj" />
+      <Image src="test.png" width={50} height={50} alt="saj" />
       <Link
         href={{
           pathname: "/Second",

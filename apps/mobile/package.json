@@ -9,8 +9,8 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@gluestack-ui/universal-image": "*",
-    "@gluestack-ui/universal-navigation": "*",
+    "@unitools/image": "*",
+    "@unitools/navigation": "*",
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.9.25",
     "expo": "~50.0.13",

@@ -1,7 +1,7 @@
 {
-  "name": "@gluestack-ui/babel-plugin-universal-image",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@unitools/babel-plugin-universal-image",
+  "version": "0.0.1",
+  "private": false,
   "exports": {
     ".": "./dist/index.js"
   },

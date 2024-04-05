@@ -1,5 +1,5 @@
 {
-  "name": "poc-universal-navigation",
+  "name": "unitools",
   "private": true,
   "scripts": {
     "build": "turbo build",

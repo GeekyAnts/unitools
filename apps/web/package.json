@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.17",
-    "@gluestack-ui/universal-image": "*",
-    "@gluestack-ui/universal-navigation": "*",
+    "@unitools/image": "*",
+    "@unitools/navigation": "*",
     "expo-image": "^1.10.6",
     "next": "^14.1.1",
     "react": "^18.2.0",
