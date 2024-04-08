@@ -68,21 +68,21 @@ export default function Home() {
 
 ## Props
 
-| Prop              | Type                     | Default | Description       | Required | Supported |
-| ----------------- | ------------------------ | ------- | ----------------- | -------- | --------- |
-| src               | string \| NextImage Type |         | Image source      | true     | ✅        |
-| alt               | string                   |         | Image alt text    | true     | ✅        |
-| width             | number                   |         | Image width       | true     | ✅        |
-| height            | number                   |         | Image height      | true     | ✅        |
-| loader            | string                   |         | Image loader      | false    | ❌        |
-| fill              | string                   |         | Image fill        | false    | ❌        |
-| sizes             | string                   |         | Image sizes       | false    | ❌        |
-| quality           | number (integer 1-100)   |         | Image quality     | false    | ❌        |
-| priority          | boolean                  |         | Image priority    | false    | ✅        |
-| placeholder       | string                   |         | Image placeholder | false    | ✅        |
-| style             | object                   |         | Image style       | false    | ✅        |
-| onError           | function                 |         | Error function    | false    | ✅        |
-| onLoad            | function                 |         | Load function     | false    | ✅        |
-| onLoadingComplete | function                 |         | Callback function | false    | ❌        |
-| loading           | string                   |         | Image loading     | false    | ❌        |
-| blurDataURL       | string                   |         | Image blur data   | false    | ❌        |
+| Prop              | Type                     | Default | Description       | Status   | Support Status |
+| ----------------- | ------------------------ | ------- | ----------------- | -------- | -------------- |
+| src               | string \| NextImage Type |         | Image source      | required | ✅             |
+| alt               | string                   |         | Image alt text    | required | ✅             |
+| width             | number                   |         | Image width       | required | ✅             |
+| height            | number                   |         | Image height      | required | ✅             |
+| loader            | string                   |         | Image loader      | -        | ❌             |
+| fill              | string                   |         | Image fill        | -        | ❌             |
+| sizes             | string                   |         | Image sizes       | -        | ❌             |
+| quality           | number (integer 1-100)   |         | Image quality     | -        | ❌             |
+| priority          | boolean                  |         | Image priority    | -        | ✅             |
+| placeholder       | string                   |         | Image placeholder | -        | ✅             |
+| style             | object                   |         | Image style       | -        | ✅             |
+| onError           | function                 |         | Error function    | -        | ✅             |
+| onLoad            | function                 |         | Load function     | -        | ✅             |
+| onLoadingComplete | function                 |         | Callback function | -        | ❌             |
+| loading           | string                   |         | Image loading     | -        | ❌             |
+| blurDataURL       | string                   |         | Image blur data   | -        | ❌             |
