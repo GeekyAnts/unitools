@@ -25,7 +25,7 @@ Add module resolver to your `next.config.js` file.
 
 module.exports = {
   webpack(config) {
-    config.resolve.alias["@unitools/navigation"] = "next/link";
+    config.resolve.alias["@unitools/navigation"] = "next/navigation";
     return config;
   },
 };
@@ -34,27 +34,24 @@ module.exports = {
 ## Usage
 
 ```jsx
-import Link from "@unitools/navigation";
+import { usePathname, useSearchParams, useRouter } from "@unitools/navigation";
 
 export default function Home() {
+  // usePathname
+  const pathname = usePathname();
+
+  // useSearchParams
+  const searchParams = useSearchParams();
+
+  const search = searchParams.get("search");
+
+  // useRouter
+  const router = useRouter();
+
   return (
     <View>
-      <Link href="/about">
-        <Text>About</Text>
-      </Link>
+      <Text>About</Text>
     </View>
   );
 }
 ```
-
-## Props
-
-| Prop     | Type             | Default | Description                                        | status   | Support Status |
-| -------- | ---------------- | ------- | -------------------------------------------------- | -------- | -------------- |
-| href     | String or Object |         | href url                                           | required | ✅             |
-| replace  | Boolean          |         | Replace the current history state                  | -        | ✅             |
-| scroll   | Boolean          |         | -                                                  | -        | ❌             |
-| prefetch | Boolean          |         | If true, this will prefetch the url                | -        | ❌             |
-| passHref | Boolean          |         | Forces Link to send the href property to its child | -        | ❌             |
-| shallow  | Boolean          |         | -                                                  | -        | ❌             |
-| locale   | Boolean          |         | If true, the active locale is automatically        | -        | ❌             |

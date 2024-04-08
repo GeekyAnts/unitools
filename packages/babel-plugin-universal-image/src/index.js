@@ -4,7 +4,7 @@ module.exports = function universalImagePlugin() {
   const imageImportPath = path.resolve(__dirname, "../../packages/image/src");
   return {
     visitor: {
-      // Find all import statements for @unitools/navigation and replace them with next/link
+      // Find all import statements for @unitools/link and replace them with next/link
       ImportDeclaration(path) {
         // console.log(path.node.source.value);
         if (

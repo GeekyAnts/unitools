@@ -1,36 +1,12 @@
 import {
-  Link as RNLink,
   NavigationRouteContext,
   useNavigation,
   useLinkTo,
   StackActions,
 } from "@react-navigation/native";
-import React, { useContext, useMemo } from "react";
-
-function Link(props: { href: any; children: React.ReactNode }) {
-  let { href, children } = props;
-  let hrefPaths;
-  if (typeof href === "object" && href.pathname) {
-    hrefPaths = href.pathname.split("/");
-  } else {
-    hrefPaths = href.split("/");
-  }
-  delete href.pahname;
-  return (
-    // @ts-ignore
-    <RNLink
-      to={{
-        screen: hrefPaths.length > 1 ? hrefPaths[1] : hrefPaths[0],
-        ...(typeof href === "object" ? href : {}),
-      }}
-    >
-      {children}
-    </RNLink>
-  );
-}
+import { useContext, useMemo } from "react";
 
 //  useRouter
-
 function usePathname() {
   let route = useContext(NavigationRouteContext);
   return route?.path;
@@ -83,6 +59,4 @@ function useRouter() {
   return route;
 }
 
-export { Link, usePathname, useSearchParams, useRouter };
-
-export default Link;
+export { usePathname, useSearchParams, useRouter };

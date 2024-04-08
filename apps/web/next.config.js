@@ -2,7 +2,7 @@
 module.exports = {
   transpilePackages: [
     "@unitools/image",
-    "@unitools/navigation",
+    "@unitools/link",
     "expo-image",
     "@react-navigation/native",
     "react-native",

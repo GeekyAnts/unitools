@@ -1,12 +1,8 @@
 import { StyleSheet, Text, View, Button } from "react-native";
 import { NavigationContainer, Link as RNLink } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import {
-  Link,
-  usePathname,
-  useRouter,
-  useSearchParams,
-} from "@unitools/navigation";
+import Link from "@unitools/link";
+import { usePathname, useRouter, useSearchParams } from "@unitools/navigation";
 import Image from "@unitools/image";
 
 function HomeScreen() {

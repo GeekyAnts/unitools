@@ -16,14 +16,14 @@ When you are working with Next and Expo projects, you will face a lot of fragmen
 ## Installation
 
 ```bash
-npm install @unitools/image @unitools/navigation
+npm install @unitools/image @unitools/link @unitools/navigation
 npm install -D @unitools/babel-plugin-image
 ```
 
 or
 
 ```bash
-yarn add @unitools/image @unitools/navigation
+yarn add @unitools/image @unitools/link @unitools/navigation
 yarn add -D @unitools/babel-plugin-image
 ```
 

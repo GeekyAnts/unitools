@@ -1,5 +1,5 @@
 import { Image as ExpoImage } from "expo-image";
-// console.log("UNIVERSAL IMAGE 0==||=========>");
+
 function Image(props: {
   src: string;
   width: number;

@@ -3,7 +3,7 @@
 import Image from "@unitools/image";
 import styles from "./page.module.css";
 import { View, Text } from "react-native-web";
-import Link from "@unitools/navigation";
+import Link from "@unitools/link";
 import React = require("react");
 
 function Gradient({

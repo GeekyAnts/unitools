@@ -1,5 +1,5 @@
 {
-  "name": "@unitools/navigation",
+  "name": "@unitools/link",
   "version": "0.0.1",
   "private": false,
   "main": "dist/index.js",

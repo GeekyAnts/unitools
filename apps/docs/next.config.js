@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  transpilePackages: ["@unitools/navigation", "@unitools/image"],
+  transpilePackages: [
+    "@unitools/link",
+    "@unitools/image",
+    "@unitools/navigation",
+  ],
 };
