@@ -2,9 +2,9 @@
 
 This is the official documentation of the `@unitools/navigation` package.
 
-## Installation
+## For Next.js
 
-### Install all the dependencies
+### Installation
 
 ```bash
 npm install @unitools/navigation
@@ -15,8 +15,6 @@ or
 ```bash
 yarn add @unitools/navigation
 ```
-
-### For Next.js
 
 Add module resolver to your `next.config.js` file.
 
@@ -29,6 +27,22 @@ module.exports = {
     return config;
   },
 };
+```
+
+## For Expo
+
+### Installation
+
+Install `@unitools/navigation` and the peer dependency `@react-navigation/native`.
+
+```bash
+npm install @unitools/navigation @react-navigation/native
+```
+
+or
+
+```bash
+yarn add @unitools/navigation @react-navigation/native
 ```
 
 ## Usage

@@ -2,9 +2,9 @@
 
 This is the official documentation of the `@unitools/link` package.
 
-## Installation
+## For Next.js
 
-### Install all the dependencies
+### Installation
 
 ```bash
 npm install @unitools/link
@@ -15,8 +15,6 @@ or
 ```bash
 yarn add @unitools/link
 ```
-
-### For Next.js
 
 Add module resolver to your `next.config.js` file.
 
@@ -29,6 +27,22 @@ module.exports = {
     return config;
   },
 };
+```
+
+## For Expo
+
+### Installation
+
+Install `@unitools/link` and the peer dependency `@react-navigation/native`.
+
+```bash
+npm install @unitools/link @react-navigation/native
+```
+
+or
+
+```bash
+yarn add @unitools/link @react-navigation/native
 ```
 
 ## Usage

@@ -10,7 +10,7 @@ When you are working with Next and Expo projects, you will face a lot of fragmen
 
 - [x] Image (A unified API for handling images with the help of a Babel Plugin)
 - [x] Link (A unified API for handling links based on Next Link API)
-- [x] Route Navigation Hooks (Similar to Next Router)
+- [x] Route Navigation Hooks (Similar to `next/navigation`)
 - [ ] Utility functions (In Progress)
 
 ## Installation
@@ -30,5 +30,6 @@ yarn add -D @unitools/babel-plugin-image
 ## Documentation
 
 - [Image](packages/image/README.md)
+- [Link](packages/link/README.md)
 - [Navigation](packages/navigation/README.md)
 - [Babel Plugin Image](packages/babel-plugin-universal-image/README.md)

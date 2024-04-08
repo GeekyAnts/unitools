@@ -2,9 +2,9 @@
 
 This is the official documentation of the `@unitools/image` package.
 
-## Installation
+## For Next.js
 
-### Install all the dependencies
+### Installation
 
 ```bash
 npm install @unitools/image
@@ -17,8 +17,6 @@ or
 yarn add @unitools/image
 yarn add -D @unitools/babel-plugin-image
 ```
-
-### For Next.js
 
 Add module resolver to your `next.config.js` file.
 
@@ -33,7 +31,21 @@ module.exports = {
 };
 ```
 
-### For Expo
+## For Expo
+
+### Installation
+
+```bash
+npm install @unitools/image expo-image
+npm install -D @unitools/babel-plugin-image
+```
+
+or
+
+```bash
+yarn add @unitools/image expo-image
+yarn add -D @unitools/babel-plugin-image
+```
 
 Add babel plugin to your `babel.config.js` file.
 
