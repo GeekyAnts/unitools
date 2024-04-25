@@ -10,8 +10,7 @@
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "build": "esbuild ./src/*.js --bundle --platform=node --packages=external --outdir=dist && esbuild ./src/*.ts --bundle --sourcemap --tsconfig=tsconfig.json --platform=node --loader:.ts=ts --packages=external --outdir=dist && tsc --emitDeclarationOnly --outDir dist",
-    "postinstall": "node ./src/postinstall.js"
+    "build": "esbuild ./src/*.js --bundle --platform=node --packages=external --outdir=dist && esbuild ./src/*.ts --bundle --sourcemap --tsconfig=tsconfig.json --platform=node --loader:.ts=ts --packages=external --outdir=dist && tsc --emitDeclarationOnly --outDir dist"
   },
   "devDependencies": {
     "@turbo/gen": "^1.12.4",

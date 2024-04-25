@@ -1,65 +1,30 @@
-import { StyleSheet, Text, View, Button } from "react-native";
-import { NavigationContainer, Link as RNLink } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Link from "@unitools/link";
-import { usePathname, useRouter, useSearchParams } from "@unitools/navigation";
-import Image from "@unitools/image";
+import React from "react";
+import { Pressable, Text, View } from "react-native";
 
-function HomeScreen() {
+import { preview } from "react-native-ide";
+
+preview(<MyButton name={"ankit"} />);
+
+function MyButton({ name }: any) {
+  return (
+    <Pressable>
+      <Text>{name}</Text>
+    </Pressable>
+  );
+}
+
+const App = () => {
   return (
     <View
       style={{
         flex: 1,
-        alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "white",
+        alignItems: "center",
       }}
     >
-      <Text>Home Screen</Text>
-      <Image src="test.png" width={50} height={50} alt="saj" />
-      <Link
-        href={{
-          pathname: "/Second",
-          params: { name: "saj" },
-        }}
-      >
-        <Text>Second</Text>
-      </Link>
+      <Text>Open up App.tsx to start working on your app!</Text>
     </View>
   );
-}
-function SecondScreen({ navigation }: any) {
-  let route = useRouter();
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Second Screen</Text>
-      <Button
-        title="Router Home"
-        onPress={() => route.replace("/Home")}
-      ></Button>
-      <Button title="Home" onPress={() => navigation.navigate("Home")}></Button>
-    </View>
-  );
-}
+};
 
-const Stack = createNativeStackNavigator();
-
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Second" component={SecondScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+export default App;
