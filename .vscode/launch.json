@@ -14,7 +14,7 @@
       "android": {
         "variant": "debug"
       },
-      "appRoot": "apps/expo-router-example"
+      "appRoot": "apps/expo-router-example/expo-router/entry"
     }
   ]
 }

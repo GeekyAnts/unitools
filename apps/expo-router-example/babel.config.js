@@ -1,4 +1,5 @@
 const path = require("path");
+const imageBabel = require("../../packages/babel-plugin-universal-image/src/index");
 
 module.exports = function (api) {
   api.cache(true);
@@ -11,7 +12,14 @@ module.exports = function (api) {
           alias: {
             "@unitools/link": "@unitools/link-expo",
             "@unitools/router": "@unitools/router-expo",
+            "@unitools/image": "@unitools/image-expo",
           },
+        },
+      ],
+      [
+        imageBabel,
+        {
+          assetPath: "./assets",
         },
       ],
     ],
