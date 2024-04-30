@@ -9,16 +9,17 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/native-stack": "^6.9.25",
     "@unitools/image": "*",
     "@unitools/link": "*",
     "@unitools/navigation": "*",
-    "@react-navigation/native": "^6.1.17",
-    "@react-navigation/native-stack": "^6.9.25",
     "expo": "~50.0.13",
     "expo-image": "^1.10.6",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
     "react-native": "0.73.5",
+    "react-native-ide": "^0.0.2",
     "react-native-safe-area-context": "4.8.2",
     "react-native-screens": "~3.29.0"
   },

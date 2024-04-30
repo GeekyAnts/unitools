@@ -1,7 +1,7 @@
 {
-  "extends": "./nextjs.json",
+  "extends": "./next.json",
   "compilerOptions": {
-    "jsx": "react",
+    "jsx": "preserve",
     "plugins": [
       {
         "name": "next"

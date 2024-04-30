@@ -1,0 +1,16 @@
+{
+  "extends": "./react-library.json",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "NodeNext",
+    "jsx": "react",
+    "outDir": "./dist",
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
