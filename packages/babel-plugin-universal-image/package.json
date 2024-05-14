@@ -1,6 +1,6 @@
 {
   "name": "@unitools/babel-plugin-universal-image",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "private": false,
   "exports": {
     ".": "./dist/index.js"
