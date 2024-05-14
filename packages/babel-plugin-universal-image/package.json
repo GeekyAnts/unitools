@@ -1,6 +1,6 @@
 {
   "name": "@unitools/babel-plugin-universal-image",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "exports": {
     ".": "./dist/index.js"
@@ -15,10 +15,10 @@
     "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
+    "esbuild": "^0.20.2",
     "eslint": "^8.57.0",
     "react": "^18.2.0",
-    "typescript": "^5.3.3",
-    "esbuild": "^0.20.2"
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.16",
