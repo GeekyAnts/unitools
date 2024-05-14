@@ -10,9 +10,7 @@
   "scripts": {
     "type-check": "tsc --noEmit",
     "lint": "eslint . --max-warnings 0",
-    "build": "webpack",
-    "build:tsc": "yarn type-check && tsc",
-    "build-old": "yarn type-check && esbuild src/index.tsx --loader:.tsx=ts --bundle --minify --platform=node --outfile=dist/index.js"
+    "build": "yarn type-check && tsc"
   },
   "devDependencies": {
     "@babel/core": "^7.24.3",
@@ -35,8 +33,7 @@
     "webpack-cli": "^5.1.4"
   },
   "peerDependencies": {
-    "@unitools/link": "*",
-    "@react-navigation/native": "^6.1.16",
+    "@unitools/router": "*",
     "react": "^18.2.0"
   }
 }
