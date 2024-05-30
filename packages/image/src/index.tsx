@@ -26,9 +26,9 @@ export interface IImageProps {
    * When provided as an array of sources, the source that fits best into the container size and is closest to the screen scale
    * will be chosen. In this case it is important to provide `width`, `height` and `scale` properties.
    */
-  source?: ImageSource | string;
-  height: number;
-  width: number;
+  source?: ImageSource | number | string;
+  height: number | string;
+  width: number | string;
   style?: ImageStyle | ImageStyle[] | any;
   contentFit?: ImageContentFit;
   contentPosition?: string;
