@@ -6,9 +6,12 @@ import Link from "@unitools/link";
 import { useNavigation } from "expo-router";
 import Image from "@unitools/image";
 import { Image as ExpoImage } from "expo-image";
+import type { ImageProps } from "expo-image";
 import useRouter from "@unitools/router";
 
 export default function TabOneScreen() {
+  let a: ImageProps = {};
+
   const router = useRouter();
   const blurhash =
     "|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[";
@@ -24,27 +27,21 @@ export default function TabOneScreen() {
       <EditScreenInfo path="app/(tabs)/index.tsx" />
       <Link href="/(tabs)/two">Go to tabs</Link>
       <Image
-        style={{
-          flex: 1,
-          width: "100%",
-          backgroundColor: "#0553",
-        }}
-        source="/images/splash.png"
-        // placeholder={blurhash}
-        // contentFit="cover"
-        // transition={1000}
+        source={require("@/assets/images/splash.png")}
+        placeholder={blurhash}
+        contentFit="cover"
         alt="dkfjndkb"
         height={200}
         width={200}
       />
-      <ExpoImage
+      {/* <ExpoImage
         style={{
           flex: 1,
           width: "100%",
           backgroundColor: "#0553",
         }}
-        source={require("../../assets/images/splash.png")}
-      />
+        source={require("@/assets/images/splash.png")}
+      /> */}
       <Pressable
         onPress={() => {
           router.push("/(tabs)/two");

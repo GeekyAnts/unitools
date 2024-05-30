@@ -1,10 +1,9 @@
 import { Image as ExpoImage } from "expo-image";
-import type { IImageProps } from "@unitools/image";
 
-function Image(props: IImageProps) {
+function Image(props: any) {
   const { height, width, style, ...restProps } = props;
 
-  let updatedStyles = style;
+  let updatedStyles = Array.isArray(style) ? [...style] : [{ ...style }];
 
   if (Array.isArray(updatedStyles)) {
     updatedStyles.unshift({ height, width });
@@ -12,7 +11,6 @@ function Image(props: IImageProps) {
     updatedStyles = [{ height, width }, style];
   }
 
-  // @ts-ignore
   return <ExpoImage {...restProps} style={updatedStyles} />;
 }
 
