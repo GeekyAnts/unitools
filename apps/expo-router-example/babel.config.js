@@ -16,12 +16,12 @@ module.exports = function (api) {
           },
         },
       ],
-      [
-        imageBabel,
-        {
-          assetPath: "./assets",
-        },
-      ],
+      // [
+      //   imageBabel,
+      //   {
+      //     assetPath: "./assets",
+      //   },
+      // ],
     ],
   };
 };

@@ -13,6 +13,7 @@ module.exports = {
       "react-native$": "react-native-web",
       "@unitools/link$": "@unitools/link-next",
       "@unitools/router$": "@unitools/router-next",
+      "@unitools/image$": "@unitools/image-next",
     };
     return config;
   },
