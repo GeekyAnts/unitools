@@ -1,6 +1,7 @@
 import NextImage from "next/image";
+import { forwardRef } from "react";
 
-function Image(props: any) {
+const Image = forwardRef((props: any) => {
   let {
     source,
     height,
@@ -39,6 +40,8 @@ function Image(props: any) {
       }}
     />
   );
-}
+});
+
+Image.displayName = "NextImage";
 
 export default Image;
