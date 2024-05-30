@@ -1,6 +1,7 @@
 import { Image as ExpoImage } from "expo-image";
+import { forwardRef } from "react";
 
-function Image(props: any) {
+const Image = forwardRef((props: any) => {
   const { height, width, style, ...restProps } = props;
 
   let updatedStyles = Array.isArray(style) ? [...style] : [{ ...style }];
@@ -12,6 +13,8 @@ function Image(props: any) {
   }
 
   return <ExpoImage {...restProps} style={updatedStyles} />;
-}
+});
+
+Image.displayName = "ExpoImage";
 
 export default Image;
