@@ -1,27 +1,18 @@
 import NextImage from "next/image";
 import { forwardRef } from "react";
 
-const Image = forwardRef((props: any) => {
-  let {
-    source,
-    height,
-    width,
-    placeholder,
-    contentFit,
-    contentPosition,
-    ...restProps
-  } = props;
+const Image = forwardRef((props: any, ref: any) => {
+  let { source, placeholder, contentFit, contentPosition, ...restProps } =
+    props;
 
   let nextImageProps: any = {
-    height,
-    width,
     src: source,
   };
 
-  if (height === "100%" && width === "100%") {
+  if (restProps?.height === "100%" && restProps?.width === "100%") {
     nextImageProps.fill = true;
-    delete nextImageProps.height;
-    delete nextImageProps.width;
+    delete restProps.height;
+    delete restProps.width;
   }
 
   if (source?.uri) {
@@ -38,6 +29,7 @@ const Image = forwardRef((props: any) => {
         objectPosition: contentPosition,
         ...restProps?.style,
       }}
+      ref={ref}
     />
   );
 });
