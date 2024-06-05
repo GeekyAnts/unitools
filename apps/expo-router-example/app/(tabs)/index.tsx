@@ -8,6 +8,7 @@ import Image from "@unitools/image";
 import { Image as ExpoImage } from "expo-image";
 import type { ImageProps } from "expo-image";
 import useRouter from "@unitools/router";
+import Button from "@/components/button/button";
 
 export default function TabOneScreen() {
   let a: ImageProps = {};
@@ -34,6 +35,7 @@ export default function TabOneScreen() {
         height={200}
         width={200}
       />
+      <Button />
       {/* <ExpoImage
         style={{
           flex: 1,

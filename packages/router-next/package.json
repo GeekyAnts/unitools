@@ -10,7 +10,8 @@
   "scripts": {
     "type-check": "tsc --noEmit",
     "lint": "eslint . --max-warnings 0",
-    "build": "yarn type-check && tsc"
+    "build": "yarn type-check && tsc",
+    "prepare": "yarn type-check && tsc"
   },
   "devDependencies": {
     "@babel/core": "^7.24.3",

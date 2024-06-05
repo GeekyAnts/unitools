@@ -12,6 +12,7 @@
     "lint": "eslint . --max-warnings 0",
     "build": "webpack",
     "build:tsc": "yarn type-check && tsc",
+    "prepare": "yarn type-check && tsc",
     "build-old": "yarn type-check && esbuild src/index.tsx --loader:.tsx=ts --bundle --minify --platform=node --outfile=dist/index.js"
   },
   "devDependencies": {
