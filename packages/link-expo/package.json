@@ -1,6 +1,6 @@
 {
   "name": "@unitools/link-expo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,8 +35,8 @@
     "webpack-cli": "^5.1.4"
   },
   "peerDependencies": {
-    "@unitools/link": "*",
     "@react-navigation/native": "^6.1.16",
+    "@unitools/link": "*",
     "react": "^18.2.0"
   }
 }
