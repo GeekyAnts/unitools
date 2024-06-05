@@ -1,9 +1,9 @@
 import NextLink from "next/link";
 import React from "react";
 import type { LinkProps } from "@unitools/link";
-import router from "next/router";
+import { forwardRef } from "react";
 
-export default function Link({ asChild, children, ...props }: LinkProps) {
+export const Link = forwardRef(({ asChild, children, ...props }: LinkProps) => {
   if (asChild) {
     return (
       <NextLink
@@ -19,4 +19,6 @@ export default function Link({ asChild, children, ...props }: LinkProps) {
   }
 
   return <NextLink {...props}>{children}</NextLink>;
-}
+});
+
+export default Link;
