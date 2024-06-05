@@ -7,6 +7,7 @@ export interface LinkProps {
   push?: boolean;
   replace?: boolean;
   asChild?: boolean;
+  target?: string;
 }
 
 export default function Link(_: LinkProps) {
