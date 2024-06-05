@@ -1,6 +1,6 @@
 {
   "name": "@unitools/link-next",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,7 @@
   },
   "peerDependencies": {
     "@react-navigation/native": "^6.1.16",
-    "react": "^18.2.0",
-    "next": "*"
+    "next": "*",
+    "react": "^18.2.0"
   }
 }
