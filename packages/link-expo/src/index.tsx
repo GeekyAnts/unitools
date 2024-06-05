@@ -3,7 +3,8 @@ import React from "react";
 import type { LinkProps } from "@unitools/link";
 import { forwardRef } from "react";
 
-export const Link = forwardRef((props: LinkProps) => {
+// ExpoLink doesn't support have ref prop
+export const Link = forwardRef((props: LinkProps, _?: any) => {
   return <ExpoLink {...props} />;
 });
 
