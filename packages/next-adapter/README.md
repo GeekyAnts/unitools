@@ -1,74 +1,33 @@
-# @unitools/link [ALPHA]
+# @unitools/next-adapter [ALPHA]
 
-This is the official documentation of the `@unitools/link` package.
+### This is the official documentation for the @unitools/next-adapter package.
 
-## For Next.js
+## Features
+
+- Support for .unitools.{js|ts|jsx|tsx} file extensions.
+- Automatic aliasing of @unitools/_ packages to @unitools/_-next and react-native to react-native-web.
+- Transpilation support for react-native, @unitools/_-next, @expo, and expo-_ packages.
 
 ### Installation
 
+To install the package, use either of the following commands:
+
 ```bash
-npm install @unitools/link
+npm install @unitools/next-adapter
 ```
 
 or
 
 ```bash
-yarn add @unitools/link
+yarn add @unitools/next-adapter
 ```
 
-Add module resolver to your `next.config.js` file.
+Then, add the following configuration to your next.config.js file:
 
 ```js
-// next.config.js
+/** @type {import('next').NextConfig} */
+const { withUnitools } = require("@unitools/next-adapter");
+const config = withUnitools({});
 
-module.exports = {
-  webpack(config) {
-    config.resolve.alias["@unitools/link"] = "next/link";
-    return config;
-  },
-};
+module.exports = config;
 ```
-
-## For Expo
-
-### Installation
-
-Install `@unitools/link` and the peer dependency `@react-navigation/native`.
-
-```bash
-npm install @unitools/link @react-navigation/native
-```
-
-or
-
-```bash
-yarn add @unitools/link @react-navigation/native
-```
-
-## Usage
-
-```jsx
-import Link from "@unitools/link";
-
-export default function Home() {
-  return (
-    <View>
-      <Link href="/about">
-        <Text>About</Text>
-      </Link>
-    </View>
-  );
-}
-```
-
-## Props
-
-| Prop     | Type             | Default | Description                                        | status   | Support Status |
-| -------- | ---------------- | ------- | -------------------------------------------------- | -------- | -------------- |
-| href     | String or Object |         | href url                                           | required | ✅             |
-| replace  | Boolean          |         | Replace the current history state                  | -        | ✅             |
-| scroll   | Boolean          |         | -                                                  | -        | ❌             |
-| prefetch | Boolean          |         | If true, this will prefetch the url                | -        | ❌             |
-| passHref | Boolean          |         | Forces Link to send the href property to its child | -        | ❌             |
-| shallow  | Boolean          |         | -                                                  | -        | ❌             |
-| locale   | Boolean          |         | If true, the active locale is automatically        | -        | ❌             |

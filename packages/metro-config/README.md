@@ -1,74 +1,36 @@
-# @unitools/link [ALPHA]
+# @unitools/metro-config [ALPHA]
 
-This is the official documentation of the `@unitools/link` package.
+### This is the official documentation for the @unitools/metro-config package.
 
-## For Next.js
+## Features
+
+- Support for .expo-web.{js|ts|jsx|tsx} file extensions.
 
 ### Installation
 
+To install `@unitools/metro-config`, use either of the following commands:
+
 ```bash
-npm install @unitools/link
+npm install @unitools/metro-config @react-navigation/native
 ```
 
 or
 
 ```bash
-yarn add @unitools/link
-```
-
-Add module resolver to your `next.config.js` file.
-
-```js
-// next.config.js
-
-module.exports = {
-  webpack(config) {
-    config.resolve.alias["@unitools/link"] = "next/link";
-    return config;
-  },
-};
-```
-
-## For Expo
-
-### Installation
-
-Install `@unitools/link` and the peer dependency `@react-navigation/native`.
-
-```bash
-npm install @unitools/link @react-navigation/native
-```
-
-or
-
-```bash
-yarn add @unitools/link @react-navigation/native
+yarn add @unitools/metro-config @react-navigation/native
 ```
 
 ## Usage
 
+Add following to your `metro.config.js` file.
+
 ```jsx
-import Link from "@unitools/link";
+const { getDefaultConfig } = require("expo/metro-config");
+const { withUnitools } = require("@unitools/metro-config");
 
-export default function Home() {
-  return (
-    <View>
-      <Link href="/about">
-        <Text>About</Text>
-      </Link>
-    </View>
-  );
-}
+const projectRoot = __dirname;
+
+const config = getDefaultConfig(projectRoot, {});
+
+module.exports = withUnitools(config);
 ```
-
-## Props
-
-| Prop     | Type             | Default | Description                                        | status   | Support Status |
-| -------- | ---------------- | ------- | -------------------------------------------------- | -------- | -------------- |
-| href     | String or Object |         | href url                                           | required | ✅             |
-| replace  | Boolean          |         | Replace the current history state                  | -        | ✅             |
-| scroll   | Boolean          |         | -                                                  | -        | ❌             |
-| prefetch | Boolean          |         | If true, this will prefetch the url                | -        | ❌             |
-| passHref | Boolean          |         | Forces Link to send the href property to its child | -        | ❌             |
-| shallow  | Boolean          |         | -                                                  | -        | ❌             |
-| locale   | Boolean          |         | If true, the active locale is automatically        | -        | ❌             |
