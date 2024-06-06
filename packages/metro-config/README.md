@@ -11,13 +11,13 @@
 To install `@unitools/metro-config`, use either of the following commands:
 
 ```bash
-npm install @unitools/metro-config @react-navigation/native
+npm install @unitools/metro-config
 ```
 
 or
 
 ```bash
-yarn add @unitools/metro-config @react-navigation/native
+yarn add @unitools/metro-config
 ```
 
 ## Usage
