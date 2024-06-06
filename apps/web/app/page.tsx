@@ -3,6 +3,7 @@ import Link from "@unitools/link";
 import React from "react";
 import useRouter from "@unitools/router";
 import Image from "@unitools/image";
+import Button from "../components/button";
 
 const App = () => {
   const router = useRouter();
@@ -12,6 +13,7 @@ const App = () => {
       <Link asChild href="/Second">
         <button> Go to tabs</button>
       </Link>
+      <Button />
       <Image
         source={require("@/assets/images/splash.png")}
         placeholder={blurhash}

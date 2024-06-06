@@ -1,8 +1,7 @@
 import React from "react";
-import { Text } from "react-native";
 
 const Button = () => {
-  return <Text>Button EXPO</Text>;
+  return <div>Button </div>;
 };
 
 export default Button;

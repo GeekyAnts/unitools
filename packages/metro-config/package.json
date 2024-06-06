@@ -1,0 +1,24 @@
+{
+  "name": "@unitools/metro-config",
+  "version": "0.0.4",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "build": "yarn type-check && tsc",
+    "prepare": "yarn type-check && tsc"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/preset-typescript": "^7.24.1",
+    "@types/eslint": "^8.56.5",
+    "babel-loader": "^9.1.3",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.3"
+  }
+}
