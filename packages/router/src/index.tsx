@@ -1,6 +1,3 @@
-import { Link as RNLink } from "@react-navigation/native";
-import React from "react";
-
 export interface RouterProps {
   push: (path: string) => void;
   replace: (path: string) => void;
@@ -8,7 +5,7 @@ export interface RouterProps {
   navigate: (path: string) => void;
 }
 
-export default function useRouter(): RouterProps {
+export function useRouter(): RouterProps {
   const routerProps = {
     push: (path: string) => {},
     replace: (path: string) => {},
@@ -17,4 +14,8 @@ export default function useRouter(): RouterProps {
   };
 
   return routerProps;
+}
+
+export function usePathname(): string {
+  return "";
 }

@@ -1,7 +1,8 @@
 import { useRouter as useExpoRouter } from "expo-router";
+import { usePathname as useExpoPathname } from "expo-router";
 import type { RouterProps } from "@unitools/router";
 
-export default function useRouter(): RouterProps {
+function useRouter(): RouterProps {
   const router = useExpoRouter();
 
   const routerProps = {
@@ -13,3 +14,9 @@ export default function useRouter(): RouterProps {
 
   return routerProps;
 }
+
+function usePathname(): string {
+  return useExpoPathname();
+}
+
+export { useRouter, usePathname };
