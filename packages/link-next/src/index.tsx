@@ -24,4 +24,5 @@ export const Link = forwardRef(
   }
 );
 
+Link.displayName = "NextLink";
 export default Link;
