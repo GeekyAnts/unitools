@@ -2,7 +2,7 @@ import { Pressable, StyleSheet } from "react-native";
 
 import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
-import useRouter from "@unitools/router";
+import { useRouter } from "@unitools/router";
 
 export default function TabTwoScreen() {
   const router = useRouter();

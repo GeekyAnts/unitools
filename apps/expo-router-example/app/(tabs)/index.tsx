@@ -7,7 +7,7 @@ import { useNavigation } from "expo-router";
 import Image from "@unitools/image";
 import { Image as ExpoImage } from "expo-image";
 import type { ImageProps } from "expo-image";
-import useRouter from "@unitools/router";
+import { useRouter } from "@unitools/router";
 import Button from "@/components/button/button";
 
 export default function TabOneScreen() {
