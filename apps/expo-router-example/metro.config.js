@@ -2,6 +2,7 @@ const { getDefaultConfig } = require("expo/metro-config");
 const findYarnWorkspaceRoot = require("find-yarn-workspace-root");
 const path = require("path");
 const { withUnitools } = require("@unitools/metro-config");
+const { withNativeWind } = require("nativewind/metro");
 
 // Find the project and workspace directories
 const projectRoot = __dirname;
@@ -21,4 +22,6 @@ config.resolver.nodeModulesPaths = [
 // 3. Force Metro to resolve (sub)dependencies only from the `nodeModulesPaths`
 config.resolver.disableHierarchicalLookup = true;
 
-module.exports = withUnitools(config);
+module.exports = withNativeWind(withUnitools(config), {
+  input: "./global.css",
+});

@@ -18,7 +18,17 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native": "0.73.6",
-    "react-native-web": "0.19.10"
+    "react-native-web": "latest",
+    "postcss": "latest",
+    "autoprefixer": "latest",
+    "@gluestack/ui-next-adapter": "latest",
+    "@types/react-native": "^0.73.0",
+    "tailwindcss": "3.4.3",
+    "nativewind": "4.0.36",
+    "@gluestack-ui/overlay": "latest",
+    "@gluestack-ui/toast": "latest",
+    "@gluestack-ui/nativewind-utils": "latest",
+    "react-native-svg": "13.4.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.1.1",
@@ -27,6 +37,8 @@
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "eslint": "^8.57.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "jscodeshift": "0.15.2",
+    "prettier": "^3.3.2"
   }
 }
