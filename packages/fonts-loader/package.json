@@ -2,10 +2,9 @@
   "name": "@unitools/fonts-loader",
   "version": "0.0.1",
   "private": false,
-  "main": "dist",
-  "typings": "dist/index.d.ts",
+  "main": "src",
   "files": [
-    "dist"
+    "src"
   ],
   "scripts": {
     "build": "tsc"

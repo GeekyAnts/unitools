@@ -9,10 +9,12 @@ export const useFonts = () => {
   return {
     loaded,
     error,
-    className: "SpaceMono",
-    variable: "SpaceMono",
-    style: {
-      fontFamily: "SpaceMono",
+    inter: {
+      className: "SpaceMono",
+      variable: "SpaceMono",
+      style: {
+        fontFamily: "SpaceMono",
+      },
     },
   };
 };

@@ -6,7 +6,7 @@ module.exports = {
   presets: [require("nativewind/preset")],
   theme: {
     fontFamily: {
-      body: "Inter_500Medium",
+      body: "SpaceMono",
     },
     extend: {},
   },

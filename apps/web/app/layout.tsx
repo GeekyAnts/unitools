@@ -1,17 +1,9 @@
 "use client";
-
-import { Inter } from "next/font/google";
 import { useFonts } from "@unitools/fonts-loader";
 import "./globals.css";
 import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
 
-const inter1 = useFonts();
-
-const inter = Inter({
-  weight: ["100", "500", "600"],
-  subsets: ["latin"],
-  variable: "--inter",
-});
+const { inter } = useFonts();
 
 import StyledJsxRegistry from "./registry";
 export default function RootLayout({

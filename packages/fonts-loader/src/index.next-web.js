@@ -8,8 +8,8 @@ const inter = Inter({
 
 export const useFonts = () => {
   return {
-    loaded: null,
-    error: null,
-    ...inter,
+    loaded: true,
+    error: false,
+    inter: inter,
   };
 };

@@ -19,7 +19,7 @@ function parseFontString(fontString) {
   if (match) {
     let fontConfiguration = {};
     if (match[1]) {
-      fontConfiguration.fontFamily = `var(--${match[1].toLowerCase()})`;
+      fontConfiguration.fontFamily = `var(--${match[1].replace(" ", "-").toLowerCase()})`;
     }
     if (match[2]) {
       const splittedFontWeight = splitFontWeight(match[2]);
