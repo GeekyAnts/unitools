@@ -1,0 +1,15 @@
+{
+  "name": "@unitools/fonts-loader",
+  "version": "0.0.1",
+  "private": false,
+  "main": "src",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}

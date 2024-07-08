@@ -19,6 +19,17 @@ export default function TabOneScreen() {
 
   return (
     <View style={styles.container}>
+      <Text
+        className="font-body"
+        style={
+          {
+            // fontFamily: "SpaceMono",
+            // fontWeight: 900,
+          }
+        }
+      >
+        Go to Tab two
+      </Text>
       <Text style={styles.title}>Tab One</Text>
       <View
         style={styles.separator}
@@ -49,7 +60,7 @@ export default function TabOneScreen() {
           router.push("/(tabs)/two");
         }}
       >
-        <Text>Go to Tab two</Text>
+        <Text className="bg-red-500 font-body">Go to Tab two</Text>
       </Pressable>
     </View>
   );
