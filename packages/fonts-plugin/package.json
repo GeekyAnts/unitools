@@ -1,6 +1,6 @@
 {
   "name": "@unitools/font-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "exports": {
     "./next": {
