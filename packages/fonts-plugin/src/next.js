@@ -13,6 +13,8 @@ function splitFontWeight(fontWeight) {
 }
 
 function parseFontString(fontString) {
+  if (typeof fontString !== "string") return fontString;
+
   const regex = /^([^_]+)(?:_([^_]+))?(?:_([^_]+))?$/;
   const match = fontString.match(regex);
 
