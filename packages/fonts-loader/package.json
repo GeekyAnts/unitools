@@ -1,11 +1,21 @@
 {
   "name": "@unitools/fonts-loader",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "private": false,
   "main": "src",
   "files": [
     "src"
   ],
+  "exports": {
+    "./next": {
+      "import": "./src/index.next-web.js",
+      "require": "./src/index.next-web.js"
+    },
+    "./expo": {
+      "import": "./src/index.js",
+      "require": "./src/index.js"
+    }
+  },
   "scripts": {
     "build": "tsc"
   },
