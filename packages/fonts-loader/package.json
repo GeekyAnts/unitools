@@ -1,6 +1,6 @@
 {
   "name": "@unitools/fonts-loader",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "main": "src",
   "files": [
