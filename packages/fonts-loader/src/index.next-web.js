@@ -1,15 +1,17 @@
-import { Inter } from "next/font/google";
+export const useFonts = (params) => {
+  let loaded = true;
+  let error = false
+  let variableString = "";
 
-const inter = Inter({
-  weight: ["100", "500", "600"],
-  subsets: ["latin"],
-  variable: "--inter",
-});
+  params.forEach((font) => {
+    variableString = variableString + " " + font?.variable;
+  });
 
-export const useFonts = () => {
   return {
-    loaded: true,
-    error: false,
-    inter: inter,
+    loaded,
+    error,
+    variables: variableString
   };
 };
+
+
