@@ -4,7 +4,7 @@ Unitools is a group of tooling that aims to simplify the process of code sharing
 
 ## Documentation
 
-You can find more details on [documentation website](https://unitools.geekyants.com/introduction/introduction/).
+You can find more details on [documentation website](https://unitools.geekyants.com/overview/introduction/).
 
 
 ## Why?
