@@ -1,6 +1,6 @@
 {
   "name": "@unitools/fonts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "main": "src",
   "files": [
@@ -8,10 +8,12 @@
   ],
   "exports": {
     "./next": {
+      "types": "./src/index.next-web.d.ts",
       "import": "./src/index.next-web.js",
       "require": "./src/index.next-web.js"
     },
     "./expo": {
+      "types": "./src/index.d.ts",
       "import": "./src/index.js",
       "require": "./src/index.js"
     }
